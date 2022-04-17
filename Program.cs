@@ -8,6 +8,6 @@ int z = new Random().Next(100, 999); // создай рандомно числа
 Console.WriteLine(z);
 int z1 = z % 10; // z1 = остатку деления на 10 трёхзначного числа, последнего числа = c
 int z2 = (z - z1) /  10 % 10; // z2 = (abc - c) = ab0; ab0 / 10 = ab; ab % 10 = b 
-int z3 = (z - z1 - z2 * 10) / 100; // (abc - c - b * 10) / 100
-// (abc -c - (b * 10) / 100 = a00; a00 / 100 = a
+int z3 = (z - z1 - z2 * 10) / 100; // (abc - c - b * 10) / 100.
+// (abc -c - (b * 10) / 100 = a00; a00 / 100 = a.
 Console.WriteLine($"{z3}{z1}");
